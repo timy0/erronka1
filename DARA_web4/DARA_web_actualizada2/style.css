@@ -1,4 +1,3 @@
-/* DARA - estilos simples */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.5;
 }
 
-/* ----- MENU ----- */
 header {
   background-color: #000;
   padding: 15px 30px;
@@ -22,7 +20,6 @@ header {
   border-bottom: 3px solid #e63946;
 }
 
-/* logo + nombre (lleva al inicio) */
 .marca {
   display: flex;
   align-items: center;
@@ -80,7 +77,6 @@ nav a:hover {
   color: #e63946;
 }
 
-/* ----- PORTADA ----- */
 .portada {
   position: relative;
   width: 100%;
@@ -142,7 +138,6 @@ section h2 {
   padding-left: 10px;
 }
 
-/* ----- TARJETAS (los 3 juegos) ----- */
 .tarjetas {
   display: flex;
   gap: 20px;
@@ -177,7 +172,6 @@ section h2 {
   transform: scale(1.03);
 }
 
-/* ----- MAPAS ----- */
 .mapa {
   margin-bottom: 30px;
 }
@@ -195,7 +189,6 @@ section h2 {
   color: #ccc;
 }
 
-/* ----- PIE DE PAGINA ----- */
 footer {
   background-color: #111;
   color: white;
@@ -234,20 +227,6 @@ footer {
   padding: 15px;
 }
 
-/* ================================================================
-   CODIGO NUEVO A PARTIR DE AQUI
-   Todo lo de abajo es nuevo, no toca ni pisa ninguna regla de
-   arriba. Sirve para:
-     1) las "pastillas" de plataformas (PS5, Xbox, PC...) dentro
-        de cada tarjeta de juego
-     2) el boton "Comprar ya" (reutiliza el color de .boton, que
-        ya tenias, asi que aqui solo se ajusta el tamaño/posicion)
-     3) la pagina de ficha de cada juego (juego-*.html): imagen
-        grande, descripcion, plataformas, precio, valoracion
-        con estrellas y la lista de comentarios
-   ================================================================ */
-
-/* --- Plataformas dentro de las tarjetas (PS5, Xbox, PC...) --- */
 .plataformas {
   display: flex;
   flex-wrap: wrap;
@@ -265,21 +244,12 @@ footer {
   border-radius: 20px;
 }
 
-/* --- Boton "Comprar ya" dentro de la tarjeta ---
-   Usa la clase .boton que ya tenias (mismo color rojo),
-   aqui solo cambiamos que ocupe todo el ancho y tenga
-   espacio arriba y abajo dentro de la tarjeta */
 .tarjeta .comprar {
   display: block;
   text-align: center;
   margin: 12px 15px 15px 15px;
 }
 
-/* ----------------------------------------------------------------
-   PAGINA DE DETALLE DE CADA JUEGO (juego-uncharted.html, etc.)
-   ---------------------------------------------------------------- */
-
-/* enlace para volver al catalogo */
 .volver {
   display: inline-block;
   color: #ccc;
@@ -292,15 +262,12 @@ footer {
   color: #e63946;
 }
 
-/* caja principal de la ficha del juego */
 .detalle-juego {
   max-width: 1000px;
   margin: 20px auto 60px auto;
   padding: 0 20px;
 }
 
-/* la imagen grande a la izquierda y el texto a la derecha;
-   en movil se apilan gracias al flex-wrap de abajo */
 .detalle-contenido {
   display: flex;
   flex-wrap: wrap;
@@ -332,7 +299,6 @@ footer {
   margin: 15px 0;
 }
 
-/* estrellas y nota de la valoracion general del juego */
 .valoracion {
   display: flex;
   align-items: center;
@@ -354,7 +320,6 @@ footer {
   font-size: 13px;
 }
 
-/* precio y boton grande de comprar en la ficha del juego */
 .precio {
   font-size: 28px;
   color: #e63946;
@@ -368,7 +333,6 @@ footer {
   font-size: 16px;
 }
 
-/* lista de comentarios de jugadores, debajo de la ficha */
 .comentarios {
   margin-top: 40px;
   border-top: 1px solid #333;
@@ -398,7 +362,6 @@ footer {
   font-size: 14px;
 }
 
-/* ----- CELULAR (tu media query original, sin tocar) ----- */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -414,21 +377,13 @@ footer {
   }
 }
 
-/* ----- CELULAR: ajustes para las cosas nuevas (ficha de juego) ----- */
 @media (max-width: 600px) {
   .detalle-imagen {
     width: 100%;
     height: 220px;
   }
 }
-/* ================================================================
-   CODIGO NUEVO: LOGIN Y CARRITO
-   Todo lo de aqui abajo es nuevo y no toca nada de arriba.
-   Son solo dos paginas de ejemplo (login.html y carrito.html),
-   sin ninguna funcionalidad real, solo para que se vean bien.
-   ================================================================ */
 
-/* --- caja del formulario de login y registro (login.html y registro.html usan la misma clase .login-caja) --- */
 .login-caja {
   max-width: 350px;
   margin: 60px auto;
@@ -442,7 +397,6 @@ footer {
   margin-bottom: 20px;
 }
 
-/* los campos del formulario, uno debajo del otro */
 .login-caja form {
   display: flex;
   flex-direction: column;
@@ -464,8 +418,7 @@ footer {
   border-radius: 5px;
 }
 
-/* el boton "Entrar" usa la misma clase .boton de siempre,
-   solo le quitamos el aspecto de enlace para que parezca boton */
+
 .login-caja .boton {
   border: none;
   cursor: pointer;
@@ -482,7 +435,6 @@ footer {
   color: #e63946;
 }
 
-/* --- pagina del carrito (carrito.html) --- */
 .carrito {
   max-width: 700px;
   margin: 40px auto;
@@ -493,7 +445,6 @@ footer {
   margin-bottom: 20px;
 }
 
-/* cada fila de producto: imagen + nombre/precio + boton quitar */
 .producto-carrito {
   display: flex;
   align-items: center;
@@ -530,7 +481,6 @@ footer {
   background-color: #444;
 }
 
-/* total del carrito y boton de finalizar compra */
 .carrito-total {
   text-align: right;
   margin-top: 20px;
@@ -559,7 +509,6 @@ footer {
   margin-bottom: 30px;
 }
 
-/* cada pregunta */
 .ayuda h3 {
   color: #e63946;
   margin-top: 20px;
