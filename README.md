@@ -2,7 +2,7 @@
 #  DARA — Página Web de Videojuegos
 
 <p align="center">
-  <img src="DARA_web_actualizada2/logo.jpg" alt="DARA Logo" width="180">
+  <img src="DARA_web4/DARA_web_actualizada2/logo.jpg" alt="DARA Logo" width="180">
 </p>
 
 <h3 align="center"> Descubre. Explora. Juega. </h3>
