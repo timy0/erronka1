@@ -32,7 +32,7 @@ En este repositorio se encuentra el código fuente y los recursos utilizados par
 
 ###  Creadores de DARA
 
-|  Integrante | 💻 Rol |
+|  Integrante |  Rol |
 |---|---|
 |  **Daymer** | Desarrollo y diseño |
 |  **Aimar** | Desarrollo y contenido |
