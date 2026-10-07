@@ -1,11 +1,11 @@
 # erronka1
-# 🎮 DARA — Página Web de Videojuegos
+#  DARA — Página Web de Videojuegos
 
 <p align="center">
-  <img src="DARA_web/logo.jpg" alt="DARA Logo" width="180">
+  <img src="DARA_web_actualizada2/logo.jpg" alt="DARA Logo" width="180">
 </p>
 
-<h3 align="center">🎮 Descubre. Explora. Juega. 🎮</h3>
+<h3 align="center"> Descubre. Explora. Juega. </h3>
 
 <p align="center">
   <strong>Repositorio oficial de la página web de videojuegos DARA</strong>
@@ -20,7 +20,7 @@
 
 ---
 
-## 🕹️ Sobre DARA
+##  Sobre DARA
 
 **DARA** es una página web dedicada al mundo de los **videojuegos**, creada como proyecto por un equipo de tres integrantes.
 
@@ -30,39 +30,39 @@ En este repositorio se encuentra el código fuente y los recursos utilizados par
 
 ---
 
-## 👥 Nuestro equipo
+##  Nuestro equipo
 
-### 🚀 Creadores de DARA
+###  Creadores de DARA
 
-| 👤 Integrante | 💻 Rol |
+|  Integrante | 💻 Rol |
 |---|---|
-| 🎮 **Daymer** | Desarrollo y diseño |
-| 🕹️ **Aimar** | Desarrollo y contenido |
-| ⚡ **Ander** | Desarrollo y contenido |
+|  **Daymer** | Desarrollo y diseño |
+|  **Aimar** | Desarrollo y contenido |
+|  **Ander** | Desarrollo y contenido |
 
-> 💡 **DARA es un proyecto desarrollado conjuntamente por Daymer, Aimar y Ander.**
+>  **DARA es un proyecto desarrollado conjuntamente por Daymer, Aimar y Ander.**
 
 ---
 
-## 🎯 ¿Qué encontrarás en DARA?
+##  ¿Qué encontrarás en DARA?
 
 Nuestra página está organizada en diferentes secciones para facilitar la navegación:
 
-### ⚔️ Acción
+###  Acción
 Una sección dedicada a los videojuegos de **acción**, combates, aventuras y experiencias llenas de adrenalina.
 
-### 🗺️ Aventura
+###  Aventura
 Explora mundos, historias y experiencias dentro de nuestra selección de videojuegos de **aventura**.
 
-### 🏆 Deportes
+###  Deportes
 Una sección centrada en videojuegos relacionados con diferentes **deportes**.
 
-### 🗺️ Mapas
+###  Mapas
 Información y recursos relacionados con diferentes mapas y mundos de videojuegos.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 Para desarrollar DARA hemos utilizado principalmente:
 
@@ -74,7 +74,7 @@ Para desarrollar DARA hemos utilizado principalmente:
 
 </p>
 
-### 📂 Estructura del proyecto
+###  Estructura del proyecto
 
 ```text
 DARA_web/
