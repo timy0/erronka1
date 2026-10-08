@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- UTF-8 = los acentos, la ñ y los simbolos se ven bien en cualquier ordenador -->
+  <meta charset="UTF-8">
+    <!-- Esto hace que la pagina se adapte al ancho del movil/tablet en vez de verse diminuta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Texto que aparece en la pestaña del navegador -->
+
+  <title>DARA - Registrarse</title>
+    <!-- Conecta esta pagina con el archivo de estilos style.css (los colores, tamaños, etc) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======================================================
+       CABECERA (igual en todas las paginas de la web)
+       ======================================================  -->
+  <header>
+    <!-- Logo + nombre "DARA": al pulsar cualquiera de los dos te lleva siempre al inicio -->
+
+    <a class="marca" href="index.html">
+      <img class="logo" src="images/logo.jpg" alt="Logo DARA">
+      <h1>DARA</h1>
+    </a>
+    <!-- Menu principal: un enlace por cada apartado de la web -->
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="mapas.html">Localización</a>
+      <a href="accion.html">Acción</a>
+      <a href="aventura.html">Aventura</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+ 
+  <!-- ======================================================
+       PAGINA: registro (crear cuenta)
+       Es igual que login.html pero con mas campos. Tampoco
+       hace nada todavia (no valida ni guarda los datos),
+       es solo la pantalla para enseñar como quedaria.
+       Usa la misma clase "login-caja" del CSS que el login,
+       por eso tienen el mismo estilo de caja.
+       ====================================================== -->
+  <section class="login-caja">
+    <h2>Crear cuenta</h2>
+
+    <form>
+      <!-- nombre de usuario -->
+      <label for="nombre">Nombre de usuario</label>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+
+      <!-- correo -->
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+
+      <!-- contraseña -->
+      <label for="clave">Contraseña</label>
+      <input type="password" id="clave" placeholder="Crea una contraseña">
+
+      <!-- repetir contraseña, para que el usuario confirme que la escribio bien -->
+      <label for="clave2">Repite la contraseña</label>
+      <input type="password" id="clave2" placeholder="Repite la contraseña">
+
+      <!-- boton decorativo, no envia el formulario a ningun lado -->
+      <button type="button" class="boton">Registrarme</button>
+    </form>
+
+    <!-- enlace de vuelta al login, por si el usuario ya tiene cuenta -->
+    <p class="login-aviso">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+  </section>
+
+<!-- ======================================================
+     PIE DE PAGINA (igual en todas las paginas de la web)
+     ======================================================  -->
+<footer>
+  <div class="footer-contenido">
+
+    <div>
+      <!-- columna 1: texto corto de presentacion de la tienda -->
+
+      <h3>DARA</h3>
+      <p>Los mejores videojuegos en un solo lugar.</p>
+    </div>
+
+    <div>
+      <!-- columna 2: enlace al centro de ayuda (ayuda.html) -->
+
+      <h3>Ayuda</h3>
+      <a href="ayuda.html" target="_blank">Centro de ayuda</a>
+    </div>
+
+    <div>
+      <!-- columna 3: enlaces a Instagram, YouTube y TikTok (abren en pestaña nueva por el target="_blank") -->
+
+      <h3>Redes sociales</h3>
+      <a href="https://www.instagram.com/mmaiinee/?hl=es" target="_blank">Instagram</a>
+      <a href="https://youtu.be/dQw4w9WgXcQ?si=A-UCEVaRQT4sGEJh" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@rockstargames/video/7679255084114496782" target="_blank">TikTok</a>
+    </div>
+
+  </div>
+
+  <!-- linea final de copyright, debajo de las 3 columnas -->
+
+
+  <div class="derechos">
+    <p>© 2026 DARA - Todos los derechos reservados</p>
+  </div>
+</footer>
+</body>
+</html>

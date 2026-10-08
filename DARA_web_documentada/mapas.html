@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- UTF-8 = los acentos, la ñ y los simbolos se ven bien en cualquier ordenador -->
+  <meta charset="UTF-8">
+    <!-- Esto hace que la pagina se adapte al ancho del movil/tablet en vez de verse diminuta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Texto que aparece en la pestaña del navegador -->
+
+  <title>DARA - Mapas</title>
+    <!-- Conecta esta pagina con el archivo de estilos style.css (los colores, tamaños, etc) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======================================================
+       CABECERA (igual en todas las paginas de la web)
+       ======================================================  -->
+  <header>
+    <!-- Logo + nombre "DARA": al pulsar cualquiera de los dos te lleva siempre al inicio -->
+
+    <a class="marca" href="index.html">
+      <img class="logo" src="images/logo.jpg" alt="Logo DARA">
+      <h1>DARA</h1>
+    </a>
+    <!-- Menu principal: un enlace por cada apartado de la web -->
+
+    <nav>
+    <a href="index.html">Inicio</a>
+      <a href="mapas.html">Localización</a>
+      <a href="accion.html">Acción</a>
+      <a href="aventura.html">Aventura</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="nosotros.html">Nosotros</a>
+
+    </nav>
+  </header>
+
+  <!-- ======================================================
+       PAGINA: mapas / localización
+       Texto de ubicacion + horario, y debajo un mapa de
+       Google Maps incrustado con <iframe> (ese enlace tan
+       largo en el src es el que genera Google al pulsar
+       "Compartir > Insertar un mapa" en Google Maps)
+       ====================================================== -->
+  <section>
+    <h2>Mapas</h2>
+    <p>estamos ubicados en el centro de la ciudad, a solo unos pasos de tu casa.</p>
+<!-- linea separadora horizontal, solo decorativa -->
+<hr>
+    <div class="mapa">
+      <p>Maristak durango nuentra primera ""tienda"" de videojuegos, con nuestras mayores ofertas y servicios</p>
+      <p>Abiertos de 8:00 AM a 14:00 PM</p>
+      <!-- mapa de Google Maps incrustado con la ubicacion de la tienda -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2909.839953005135!2d-2.636785123091714!3d43.170883571129096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e3293d3c1b2fb%3A0xcae08f4e7d50a74b!2sMaristak%20Durango-Ikastetxea%20(Maristak%20Euskadi%20fundazioa)!5e0!3m2!1ses-419!2ses!4v1790922943483!5m2!1ses-419!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+
+
+
+<!-- ======================================================
+     PIE DE PAGINA (igual en todas las paginas de la web)
+     ======================================================  -->
+<footer>
+  <div class="footer-contenido">
+
+    <div>
+      <!-- columna 1: texto corto de presentacion de la tienda -->
+
+      <h3>DARA</h3>
+      <p>Los mejores videojuegos en un solo lugar.</p>
+    </div>
+
+    <div>
+      <!-- columna 2: enlace al centro de ayuda (ayuda.html) -->
+
+      <h3>Ayuda</h3>
+            <a href="ayuda.html" target="_blank">Centro de ayuda</a>
+
+    </div>
+
+    <div>
+      <!-- columna 3: enlaces a Instagram, YouTube y TikTok (abren en pestaña nueva por el target="_blank") -->
+
+      <h3>Redes sociales</h3>
+      <a href="https://www.instagram.com/mmaiinee/?hl=es" target="_blank">Instagram</a>
+      <a href="https://youtu.be/dQw4w9WgXcQ?si=A-UCEVaRQT4sGEJh" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@rockstargames/video/7679255084114496782" target="_blank">TikTok</a>
+    </div>
+
+  </div>
+
+  <!-- linea final de copyright, debajo de las 3 columnas -->
+
+
+  <div class="derechos">
+    <p>© 2026 DARA - Todos los derechos reservados</p>
+  </div>
+</footer> 
+</body>
+</html

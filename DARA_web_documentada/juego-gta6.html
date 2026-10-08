@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- UTF-8 = los acentos, la ñ y los simbolos se ven bien en cualquier ordenador -->
+  <meta charset="UTF-8">
+    <!-- Esto hace que la pagina se adapte al ancho del movil/tablet en vez de verse diminuta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Texto que aparece en la pestaña del navegador -->
+
+  <title>DARA - Grand Theft Auto VI (GTA 6)</title>
+    <!-- Conecta esta pagina con el archivo de estilos style.css (los colores, tamaños, etc) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======================================================
+       CABECERA (igual en todas las paginas de la web)
+       ======================================================  -->
+  <header>
+    <!-- Logo + nombre "DARA": al pulsar cualquiera de los dos te lleva siempre al inicio -->
+
+    <a class="marca" href="index.html">
+      <img class="logo" src="images/logo.jpg" alt="Logo DARA">
+      <h1>DARA</h1>
+    </a>
+    <!-- Menu principal: un enlace por cada apartado de la web -->
+
+    <nav>
+   <a href="index.html">Inicio</a>
+      <a href="mapas.html">Localización</a>
+      <a href="accion.html">Acción</a>
+      <a href="aventura.html">Aventura</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="carrito.html">Carrito</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+ 
+  <!-- ======================================================
+
+
+ 
+       PAGINA: ficha de detalle de un juego
+
+
+ 
+       Foto grande, titulo, valoracion con estrellas,
+
+
+ 
+       descripcion, plataformas, precio, boton de compra
+
+
+ 
+       y los comentarios de otros jugadores debajo
+
+
+ 
+       ======================================================  -->
+
+
+ 
+  <section class="detalle-juego">
+
+    <!-- enlace para volver al catalogo de Acción -->
+
+
+    <a href="accion.html" class="volver">&larr; Volver al catálogo</a>
+
+    <!-- imagen grande a la izquierda y los datos del juego a la derecha -->
+
+
+    <div class="detalle-contenido">
+
+      <!-- foto grande del juego -->
+
+
+      <img class="detalle-imagen" src="images/gta.jpg" alt="Grand Theft Auto VI (GTA 6)">
+
+      <div class="detalle-info">
+        <h2>Grand Theft Auto VI (GTA 6)</h2>
+
+        <!-- valoracion con estrellas, numero y cantidad de votos (escrita a mano, no es un calculo real) -->
+
+
+        <div class="valoracion">
+          <span class="valoracion-estrellas">★★★★★</span>
+          <span class="valoracion-numero">4.9 / 5</span>
+          <span class="valoracion-votos">(1204 valoraciones)</span>
+        </div>
+
+        <!-- descripcion del juego -->
+
+
+        <p class="detalle-descripcion">El juego transporta a los jugadores al gigantesco estado ficticio de Leonida (basado en Florida), 
+          el cual incluye una versión completamente rediseñada de la icónica y vibrante Vice City junto a pantanos, playas y entornos rurales en un mapa que duplica en tamaño al de GTA V.
+         Por primera vez en la saga, la narrativa está protagonizada por un dúo criminal dinámico inspirado en Bonnie y Clyde: Lucia, una exconvicta, y Jason.</p>
+
+    <!-- enlace al trailer en YouTube (abre en pestaña nueva) --><a href="https://youtu.be/QdBZY2fkU-0?si=9HTpId8uhSLrNV5" target="_blank" class="mi-enlace-youtube">
+  Ver video en YouTube
+</a>
+
+        <!-- plataformas donde esta disponible el juego -->
+
+
+        <div class="plataformas">
+          <span class="plataforma">PS5</span>
+          <span class="plataforma">Xbox Series X|S</span>
+        </div>
+
+        <!-- precio del juego -->
+
+
+        <p class="precio">79,99€</p>
+
+        <!-- boton de compra, no esta conectado a ningun pago real (href="#") -->
+
+
+        <a href="#" class="boton comprar">Comprar ya</a>
+      </div>
+
+    </div>
+
+    <!-- ======================================================
+
+
+         comentarios de ejemplo, escritos a mano, no vienen de
+
+
+         usuarios reales ni se pueden añadir mas desde la pagina
+
+
+         ====================================================== -->
+
+
+    <div class="comentarios">
+      <h3>Comentarios de jugadores</h3>
+
+      <div class="comentario">
+        <p class="comentario-autor">Aimar_Baaasterretxea <span class="comentario-estrellas">★★★★★</span></p>
+        <p class="comentario-texto">El mapa más grande y detallado que ha hecho Rockstar, se nota cada dólar invertido,simplemente locurita</p>
+      </div>
+      <div class="comentario">
+        <p class="comentario-autor">Nerea_99 <span class="comentario-estrellas">★★★★★</span></p>
+        <p class="comentario-texto">Lucia es uno de los mejores protagonistas de la saga, la historia engancha muchísimo.</p>
+      </div>
+    </div>
+
+  </section>
+
+<!-- ======================================================
+     PIE DE PAGINA (igual en todas las paginas de la web)
+     ======================================================  -->
+<footer>
+  <div class="footer-contenido">
+
+    <div>
+      <!-- columna 1: texto corto de presentacion de la tienda -->
+
+      <h3>DARA</h3>
+      <p>Los mejores videojuegos en un solo lugar.</p>
+    </div>
+
+    <div>
+      <!-- columna 2: enlace al centro de ayuda (ayuda.html) -->
+
+      <h3>Ayuda</h3>
+            <a href="ayuda.html" target="_blank">Centro de ayuda</a>
+
+    </div>
+
+    <div>
+      <!-- columna 3: enlaces a Instagram, YouTube y TikTok (abren en pestaña nueva por el target="_blank") -->
+
+      <h3>Redes sociales</h3>
+      <a href="https://www.instagram.com/mmaiinee/?hl=es" target="_blank">Instagram</a>
+      <a href="https://youtu.be/dQw4w9WgXcQ?si=A-UCEVaRQT4sGEJh" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@rockstargames/video/7679255084114496782" target="_blank">TikTok</a>
+    </div>
+
+  </div>
+
+  <!-- linea final de copyright, debajo de las 3 columnas -->
+
+
+  <div class="derechos">
+    <p>© 2026 DARA - Todos los derechos reservados</p>
+  </div>
+</footer>
+</body>
+</html>
