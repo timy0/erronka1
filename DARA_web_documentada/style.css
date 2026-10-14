@@ -1,0 +1,609 @@
+/* ================================================================
+   style.css - DARA
+   Una sola hoja de estilos para toda la web. Esta organizada
+   en bloques (cada uno con su titulo entre -----), de arriba
+   a abajo en el mismo orden en que aparecen los elementos en
+   las paginas: primero lo general, luego menu, portada,
+   secciones, tarjetas, mapas y pie de pagina. Al final estan
+   los bloques "CODIGO NUEVO" que se fueron añadiendo despues
+   (plataformas/comprar, fichas de juego, login/registro,
+   carrito y ayuda).
+   ================================================================ */
+
+/* reseteo general: quita los margenes y rellenos que el navegador
+   pone por defecto en todos los elementos, para empezar de cero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* el padding y el borde no aumentan el ancho/alto declarado */
+}
+
+/* estilo base de toda la pagina: tipografia, fondo oscuro y texto blanco */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ----- MENU (la cabecera <header> que se repite en todas las paginas) ----- */
+header {
+  background-color: #000;
+  padding: 15px 30px;
+  display: flex;                 /* logo a la izquierda y menu a la derecha */
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #e63946; /* linea roja que separa el menu del resto */
+}
+
+/* logo + nombre "DARA" (el enlace <a class="marca"> que lleva al inicio) */
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none; /* quita el subrayado de enlace */
+}
+
+/* el logo redondo de la cabecera */
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;     /* esto es lo que lo hace circular */
+  object-fit: cover;      /* recorta la imagen sin deformarla */
+  object-position: center;
+  border: 2px solid #e63946;
+}
+
+/* imagen circular grande de la pagina "nosotros" (reutiliza el logo.jpg) */
+.nosotrosdara {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #030303;
+}
+
+/* color verde para los titulos de la pagina "nosotros" */
+.sobre-nosotros{
+
+  color: #1ead3d;
+}
+
+/* caja de texto de la pagina "nosotros", alineada a la derecha */
+.texto-nosotros {
+  color: #fff;
+  margin-top: 20px;
+  text-align: right ;
+}
+
+
+/* el "DARA" en texto, al lado del logo */
+.marca h1 {
+  font-size: 24px;
+  color: #e63946;
+}
+
+/* cada enlace del menu de arriba (Inicio, Localización, Acción...) */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* separa el boton "ver mas" del final de la lista de tarjetas en el index */
+.vermas {
+  margin-left: 420px;
+}
+
+/* al pasar el raton por encima, el enlace del menu se pone rojo */
+nav a:hover {
+  color: #e63946;
+}
+
+/* ----- PORTADA (el banner grande del index.html, con la imagen de GTA 6) ----- */
+.portada {
+  position: relative;   /* para poder colocar .texto-portada encima con position:absolute */
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* la imagen de fondo de la portada */
+.portada img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* se ve la imagen entera, sin recortarla */
+  object-position: center;
+}
+
+/* titulo, subtitulo y boton, colocados encima de la imagen de la portada */
+.texto-portada {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centra el bloque exactamente en ese punto */
+  text-align: center;
+  color: white;
+}
+
+.texto-portada h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.texto-portada p {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+/* boton rojo que se reutiliza en TODA la pagina: "Ver juego", "Comprar ya", "Entrar"... */
+.boton {
+  display: inline-block;
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* al pasar el raton, el boton se oscurece un poco */
+.boton:hover {
+  background-color: #b82d38;
+}
+
+/* ----- SECCIONES (cada <section> de contenido: Acción, Aventura, Traileres...) ----- */
+section {
+  max-width: 1000px;  /* para que el contenido no se estire demasiado en pantallas grandes */
+  margin: 40px auto;  /* centra la seccion y deja espacio arriba/abajo */
+  padding: 0 20px;
+}
+
+/* titulo de cada seccion (ej. "Acción"), con la rayita roja a la izquierda */
+section h2 {
+  margin-bottom: 20px;
+  border-left: 5px solid #e63946;
+  padding-left: 10px;
+}
+
+/* ----- TARJETAS (cada caja de juego dentro de .tarjetas) ----- */
+.tarjetas {
+  display: flex;    /* pone las tarjetas en fila */
+  gap: 20px;
+  flex-wrap: wrap;  /* si no caben todas en la fila, pasan a la siguiente linea */
+}
+
+/* la caja individual de cada juego */
+.tarjeta {
+  background-color: #1e1e1e;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden; /* para que la imagen no se salga de las esquinas redondeadas */
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #333;
+}
+
+.tarjeta h3 {
+  padding: 10px 15px 0 15px;
+}
+
+.tarjeta p {
+  padding: 5px 15px 15px 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* efecto al pasar el raton: la tarjeta crece un poco */
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+/* ----- MAPAS (pagina mapas.html) ----- */
+.mapa {
+  margin-bottom: 30px;
+}
+
+.mapa img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.mapa p {
+  margin-top: 8px;
+  color: #ccc;
+}
+
+/* ----- PIE DE PAGINA (el <footer> que se repite en todas las paginas) ----- */
+footer {
+  background-color: #111;
+  color: white;
+  margin-top: 40px;
+}
+
+/* las 3 columnas del footer (DARA / Ayuda / Redes sociales), una al lado de otra */
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  text-align: center;
+}
+
+/* cada columna, con su titulo y enlaces en vertical */
+.footer-contenido div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contenido h3 {
+  margin-bottom: 10px;
+}
+
+.footer-contenido a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contenido a:hover {
+  color: #ffcc00;
+}
+
+/* linea de copyright final, con una rayita gris arriba para separarla */
+.derechos {
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================================================================
+   CODIGO NUEVO A PARTIR DE AQUI
+   Todo lo de abajo es nuevo, no toca ni pisa ninguna regla de
+   arriba. Sirve para:
+     1) las "pastillas" de plataformas (PS5, Xbox, PC...) dentro
+        de cada tarjeta de juego
+     2) el boton "Comprar ya" (reutiliza el color de .boton, que
+        ya tenias, asi que aqui solo se ajusta el tamaño/posicion)
+     3) la pagina de ficha de cada juego (juego-*.html): imagen
+        grande, descripcion, plataformas, precio, valoracion
+        con estrellas y la lista de comentarios
+   ================================================================ */
+
+/* --- Plataformas dentro de las tarjetas (PS5, Xbox, PC...) --- */
+.plataformas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.plataforma {
+  background-color: #2a2a2a;
+  border: 1px solid #e63946;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+/* --- Boton "Comprar ya" dentro de la tarjeta ---
+   Usa la clase .boton que ya tenias (mismo color rojo),
+   aqui solo cambiamos que ocupe todo el ancho y tenga
+   espacio arriba y abajo dentro de la tarjeta */
+.tarjeta .comprar {
+  display: block;
+  text-align: center;
+  margin: 12px 15px 15px 15px;
+}
+
+/* ----------------------------------------------------------------
+   PAGINA DE DETALLE DE CADA JUEGO (juego-uncharted.html, etc.)
+   ---------------------------------------------------------------- */
+
+/* enlace para volver al catalogo */
+.volver {
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 20px 20px 0 20px;
+  font-size: 14px;
+}
+
+.volver:hover {
+  color: #e63946;
+}
+
+/* caja principal de la ficha del juego */
+.detalle-juego {
+  max-width: 1000px;
+  margin: 20px auto 60px auto;
+  padding: 0 20px;
+}
+
+/* la imagen grande a la izquierda y el texto a la derecha;
+   en movil se apilan gracias al flex-wrap de abajo */
+.detalle-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.detalle-imagen {
+  width: 350px;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.detalle-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.detalle-info h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.detalle-descripcion {
+  color: #ccc;
+  margin: 15px 0;
+}
+
+/* estrellas y nota de la valoracion general del juego */
+.valoracion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.valoracion-estrellas {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.valoracion-numero {
+  font-weight: bold;
+}
+
+.valoracion-votos {
+  color: #999;
+  font-size: 13px;
+}
+
+/* precio y boton grande de comprar en la ficha del juego */
+.precio {
+  font-size: 28px;
+  color: #e63946;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.detalle-info .comprar {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+/* lista de comentarios de jugadores, debajo de la ficha */
+.comentarios {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.comentario {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+}
+
+.comentario-autor {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.comentario-estrellas {
+  color: #ffcc00;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.comentario-texto {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* ----- CELULAR (tu media query original, sin tocar) ----- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+  .texto-portada h2 {
+    font-size: 28px;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+}
+
+/* ----- CELULAR: ajustes para las cosas nuevas (ficha de juego) ----- */
+@media (max-width: 600px) {
+  .detalle-imagen {
+    width: 100%;
+    height: 220px;
+  }
+}
+/* ================================================================
+   CODIGO NUEVO: LOGIN Y CARRITO
+   Todo lo de aqui abajo es nuevo y no toca nada de arriba.
+   Son solo dos paginas de ejemplo (login.html y carrito.html),
+   sin ninguna funcionalidad real, solo para que se vean bien.
+   ================================================================ */
+
+/* --- caja del formulario de login y registro (login.html y registro.html usan la misma clase .login-caja) --- */
+.login-caja {
+  max-width: 350px;
+  margin: 60px auto;
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-caja h2 {
+  margin-bottom: 20px;
+}
+
+/* los campos del formulario, uno debajo del otro */
+.login-caja form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.login-caja label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.login-caja input {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* el boton "Entrar" usa la misma clase .boton de siempre,
+   solo le quitamos el aspecto de enlace para que parezca boton */
+.login-caja .boton {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.login-aviso {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+.login-aviso a {
+  color: #e63946;
+}
+
+/* --- pagina del carrito (carrito.html) --- */
+.carrito {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.carrito h2 {
+  margin-bottom: 20px;
+}
+
+/* cada fila de producto: imagen + nombre/precio + boton quitar */
+.producto-carrito {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.producto-carrito img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.producto-info {
+  flex: 1;
+}
+
+.producto-info p {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.producto-carrito .quitar {
+  background-color: #333;
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+.producto-carrito .quitar:hover {
+  background-color: #444;
+}
+
+/* total del carrito y boton de finalizar compra */
+.carrito-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.carrito-total p {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+
+/* ================================================================
+   CODIGO NUEVO: pagina de ayuda (ayuda.html)
+   Es solo texto, por eso el CSS es minimo: un titulo, unas
+   preguntas (h3) y sus respuestas (p)
+   ================================================================ */
+.ayuda {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.ayuda h2 {
+  margin-bottom: 10px;
+  border-left: 5px solid #e63946;
+  padding-left: 10px;
+}
+
+.ayuda > p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* cada pregunta */
+.ayuda h3 {
+  color: #e63946;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* cada respuesta */
+.ayuda p {
+  color: #ccc;
+}
