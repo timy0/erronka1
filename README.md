@@ -76,11 +76,11 @@ Para desarrollar DARA hemos utilizado principalmente:
 
 ```text
 DARA_web/
-│
-├──  index.html
-├──  accion.html
-├──  aventura.html
-├──  deportes.html
-├──  mapas.html
-├──  style.css
-└──  logo.jpg
+
+─  index.html
+─  accion.html
+─  aventura.html
+─  deportes.html
+─  mapas.html
+─  style.css
+─  logo.jpg
